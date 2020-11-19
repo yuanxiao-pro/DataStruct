@@ -9,7 +9,7 @@ public class HeapSort {
 
     public static void main(String[] args) {
 //        int[] arr = {5,4,8,6,9}; //假设序列如此
-        final int SIZE = 800000;
+        final int SIZE = 80000000;
         //先初始化8000w个数
         int[] arr = new int[SIZE];
         for (int i = 0; i < SIZE; i++) {
