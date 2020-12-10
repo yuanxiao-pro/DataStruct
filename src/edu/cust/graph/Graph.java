@@ -132,7 +132,7 @@ public class Graph {
         int head; //队列头结点对应的下标
         int next; //临接结点对应的下标
         LinkedList queue = new LinkedList();
-        System.out.println(this.getValueByIndex(index) + "=>");
+        System.out.print(this.getValueByIndex(index) + "=>");
         isVisited[index] = true;
         queue.addLast(index);
         while(!queue.isEmpty()){ //队列不为空
@@ -141,7 +141,7 @@ public class Graph {
             while(next != -1){
                 if(!isVisited[next]){ //临接结点存在且没被访问过
                     //输出并标记为已访问
-                    System.out.println(this.getValueByIndex(next));
+                    System.out.print(this.getValueByIndex(next)+"=>");
                     isVisited[next] = true;
                     //入队
                     queue.addLast(next);
